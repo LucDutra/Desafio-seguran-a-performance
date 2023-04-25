@@ -7,37 +7,148 @@
 	"item": [
 		{
 			"name": "Consulta base A",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
 				"method": "GET",
 				"header": [],
-				"url": null
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8080/consultaDados/consultaBaseA",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"consultaDados",
+						"consultaBaseA"
+					]
+				}
 			},
 			"response": []
 		},
 		{
 			"name": "Consulta base B",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
 				"method": "GET",
-				"header": [],
-				"url": null
+				"header": [
+					{
+						"key": "contaBancaria",
+						"value": "1",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/consultaDados/consultaBaseB",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"consultaDados",
+						"consultaBaseB"
+					],
+					"query": [
+						{
+							"key": "contaBancari",
+							"value": "1",
+							"disabled": true
+						}
+					]
+				}
 			},
 			"response": []
 		},
 		{
 			"name": "Consulta base C",
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
 				"method": "GET",
 				"header": [],
-				"url": null
+				"url": {
+					"raw": "localhost:8080/consultaDados/consultaBaseC",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"consultaDados",
+						"consultaBaseC"
+					]
+				}
 			},
 			"response": []
 		},
 		{
 			"name": "Login",
 			"request": {
-				"method": "GET",
+				"method": "POST",
 				"header": [],
-				"url": null
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"login\":\"teste\",\r\n    \"password\":\"1234\",\r\n    \"baseAcessoSolicitada\":\"BASEB\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"login"
+					]
+				}
 			},
 			"response": []
 		}
