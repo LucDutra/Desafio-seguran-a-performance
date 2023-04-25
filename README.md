@@ -16,7 +16,7 @@
      possui uma collection para ser importada no postman, onde contem 
      todos os endpoints já construidos até o momento, facilitando a utilização desta aplicação.
     
-      <h1>Desenvolvido até o momento:</h1>
+      Desenvolvido até o momento:
     
       Neste primeiro momento, foquei na construção da estrutura de segurança da aplicação,
      então esta aplicação ainda não tem nenhuma  estrutura com algum banco de dados ou com o Redis, 
@@ -45,7 +45,7 @@
     A partir do token gerado e registrado na aba "Authroizathion" fique a vontade para utilizar o endpoint desejado.
     
     
-    <h1>Conforme descrito na documentação, as proximas implementações serão:</h1>
+    Conforme descrito na documentação, as proximas implementações serão:
     
     -Conexação com o banco de dados, relaciona e não relacional;
     -Endpoint de cadastro de usuario;
