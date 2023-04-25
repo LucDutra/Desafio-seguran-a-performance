@@ -43,6 +43,8 @@
      e o Type deverá ser o "Beare Token".
 
     A partir do token gerado e registrado na aba "Authroizathion" fique a vontade para utilizar o endpoint desejado.
+    O endpoints de consulta as bases, não esperam nenhum Body, somente o token de autorização, então não se preocupe
+    com isto neste momento.
     
     
     Conforme descrito na documentação, as proximas implementações serão:
